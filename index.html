@@ -1,107 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>UKDailyNow</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #ffffff;
-      color: #1a1a1a;
-    }
-
-    header {
-      background-color: #fff;
-      border-bottom: 2px solid #e6e6e6;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      color: #bfa046; /* Gold */
-      font-size: 2.5em;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #bfa046;
-      font-weight: bold;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    article {
-      margin-bottom: 50px;
-    }
-
-    article h2 {
-      color: #bfa046;
-    }
-
-    article p {
-      line-height: 1.6;
-    }
-
-    article img {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      border: 1px solid #ccc;
-    }
-
-    footer {
-      background-color: #f9f9f9;
-      border-top: 2px solid #e6e6e6;
-      text-align: center;
-      padding: 20px;
-      color: #999;
-    }
+    body { font-family: 'Georgia', serif; background-color: #ffffff; color: #1a1a1a; }
+    header { text-align: center; padding: 20px; background-color: #fff; border-bottom: 2px solid #e6e6e6; }
+    h1 { color: #bfa046; }
+    .container { max-width: 800px; margin: auto; padding: 20px; }
+    .article-preview { display: flex; align-items: center; gap: 20px; border-bottom: 1px solid #e6e6e6; padding-bottom: 20px; }
+    .article-preview img { max-width: 200px; height: auto; border: 1px solid #ccc; }
+    .article-preview h2 a { text-decoration: none; color: #bfa046; font-size: 1.8em; }
+    footer { text-align: center; padding: 20px; border-top: 2px solid #e6e6e6; color: #999; }
   </style>
 </head>
 <body>
   <header>
     <h1>UKDailyNow</h1>
-    <nav>
-      <a href="#">Home</a>
-    </nav>
   </header>
 
   <div class="container">
-    <article>
-      <h2>What's Really Happening in Westminster?</h2>
-      <p>
-        With the UK gearing up for its next general election, pressure mounts on party leaders to redefine their positions. The Conservative government faces internal fractures while Labour seeks to consolidate a broader coalition. Meanwhile, smaller parties like the Liberal Democrats and Greens are sharpening their messages to gain traction with increasingly disillusioned voters.
-      </p>
-      <p>
-        But beyond party lines, key issues like NHS funding, housing, and immigration reform dominate headlines — and stir public opinion. This blog aims to cut through the noise and highlight what’s truly at stake.
-      </p>
-    </article>
+    <!-- House of Lords Article Preview -->
+    <div class="article-preview">
+      <a href="lords-article.html">
+        <img src="house-of-lords-debate.jpg" alt="House of Lords Debate">
+      </a>
+      <h2><a href="lords-article.html">Democracy, Lords, and a Touch of Divine Right?</a></h2>
+    </div>
 
-    <article>
-      <h2>Democracy, Lords, and a Touch of Divine Right?</h2>
-      <img src="8e1b6388-cae6-4cef-b271-4afddc92d5ef.png" alt="House of Lords debate in session">
-      <p>
-        One might be forgiven for thinking the UK, famed for its Magna Carta and parliamentary tradition, has long since shed its feudal skin. And yet—surprise!—hereditary peers and Lords Spiritual still sit in our upper chamber. Yes, bishops with mitres and barons with coats of arms get a vote in shaping our laws.
-      </p>
-      <p>
-        While most democracies abolished unelected upper houses or reformed them into meritocratic bodies, the UK maintains a House of Lords that reads like the cast list of a period drama. We’re told this adds wisdom and stability. But does hereditary privilege belong in a chamber that influences 21st-century policy?
-      </p>
-      <p>
-        The presence of Lords by bloodline or bishopric sparks a real debate: can a country truly call itself a full democracy when unelected figures hold legislative sway? At UKDailyNow, we say: challenge the tradition, debate the divine, and maybe, just maybe, consider voting reform the next time someone in ermine robes says "aye."
-      </p>
-    </article>
+    <!-- Electoral Reform Article Preview -->
+    <div class="article-preview">
+      <a href="electoral-reform.html">
+        <img src="electoral-reform.jpg" alt="Electoral Reform Debate">
+      </a>
+      <h2><a href="electoral-reform.html">Electoral Reform: Is FPTP Outdated?</a></h2>
+    </div>
   </div>
 
   <footer>
